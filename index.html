@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asian food temple</title>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm sticky-top navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">ASIAN FOOD TEMPLE</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">POČETNA</a></li>
+            <li><a href="about.html">O AUTORU</a></li>
+            <li><a href="#kontakt">KONTAKT</a></li>
+
+          </ul>
+        </div>
+      </nav>
+        <div class="content">
+            <div class="items">
+                <div class="item">
+                    <div class="content-img-background" style="background-image:url(slike/Sushi1.jpg)"></div>
+                    
+                    <div class="img-text">
+                        <div class="logo-back">
+                            <a href="sushi.html">
+                            <img src="slike/Logos/Sushi logo.png">
+                        </a>
+                        </div>
+                        <div class="subtitle">SUSHI</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content-img-background" style="background-image:url(slike/Dumplings.jpg)"></div>
+                    
+                    <div class="img-text">
+                        <div class="logo-back">
+                            <a href="dumplings.html">
+                                <img src="slike/Logos/Dumpling logo.png">
+                            </a>
+                        </div>
+                        <div class="subtitle">DUMPLINGS</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content-img-background" style="background-image:url(slike/Allinonebowl.jpg)"></div>
+                    
+                    <div class="img-text">
+                        <div class="logo-back">
+                        <a href="allinonebowl.html">
+                            <img src="slike/Logos/Ramen logo.png">
+                        </a>
+                        </div>
+                        <div class="subtitle">SVE IZ JEDNOG TANJURA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer id="kontakt">
+        <p>Autor: Rubina Dejanović<br>
+        <a href="mailto:8rubi1@gmail.com">8rubi1@gmail.com</a></p>
+        <a href="https://www.facebook.com/profile.php?id=100012371797905"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/rubinadejanovic8/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </footer>
+
+</body>
+    <script>
+        const Items = document.querySelectorAll('.item')
+        Items.forEach(Item => {
+            Item.addEventListener('mouseover', () => {
+                Item.childNodes[1].classList.add('img-darken');
+            })
+            Item.addEventListener('mouseout', () => {
+                Item.childNodes[1].classList.remove('img-darken');
+            })
+        })
+        </script>
+</html>
